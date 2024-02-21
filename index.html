@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Adivinhação de Frutas</title>
+  <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo de Adivinhação de Frutas</h1>
+    <p>Palavra sorteada: <span id="currentWord"></span></p> 
+    <p>Dica: <span id="hintText"></span></p>
+    <input type="text" id="guessInput" placeholder="Digite sua resposta">
+    <button onclick="guess()">Adivinhar</button>
+    
+    <button class="bt" onclick="showAdditionalHint()">
+        <img src="DICAA.png" alt="DICA" style="width: 20%;align-items: center;">
+    </button>
+    
+    <p>Tentativas restantes: <span id="attempts">3</span></p>
+    <p>Pontuação: <span id="score">0</span></p>
+    <div id="result"></div>
+    <div id="additionalHint"></div>
+    <button onclick="restartGame()">Recomeçar</button>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>
